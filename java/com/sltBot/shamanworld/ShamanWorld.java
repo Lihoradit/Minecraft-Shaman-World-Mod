@@ -1,7 +1,8 @@
-package com.sltBot.shamanwrld;
+package com.sltBot.shamanworld;
 
 import com.mojang.logging.LogUtils;
-import com.sltBot.shamanwrld.items.JewsHarp;
+import com.sltBot.shamanworld.block.ModBlocks;
+import com.sltBot.shamanworld.items.ModItem;
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
@@ -24,7 +25,8 @@ public class ShamanWorld
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-        JewsHarp.register(modEventBus) ;
+        ModItem.register(modEventBus) ;
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

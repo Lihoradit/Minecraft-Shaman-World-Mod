@@ -1,3 +1,7 @@
 {
-  "item.shamanworld.jewsharp": "Jew`s harp"
+  "item.shamanworld.jewsharp": "Jew`s harp",
+
+  "block.shamanworld.totem_home_block": "Home Totem Block",
+
+  "itemGroup.shamanworldtab": "Shaman World"
 }
